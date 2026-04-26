@@ -846,6 +846,526 @@ const products = [
     "stock": 70,
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Edamame_by_Zesmerelda_in_Chicago.jpg/500px-Edamame_by_Zesmerelda_in_Chicago.jpg",
     "description": "Frozen shelled edamame, 400g."
+  },
+  {
+    "name": "Pomegranate",
+    "category": "Fruits",
+    "price": 2.99,
+    "stock": 60,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Pomegranate_Juice_%282019%29.jpg/500px-Pomegranate_Juice_%282019%29.jpg",
+    "description": "Ruby-red pomegranate, packed with antioxidants."
+  },
+  {
+    "name": "Dragon Fruit",
+    "category": "Fruits",
+    "price": 4.99,
+    "stock": 40,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Pitaya_cross_section_ed2.jpg/500px-Pitaya_cross_section_ed2.jpg",
+    "description": "Exotic pink dragon fruit."
+  },
+  {
+    "name": "Coconut",
+    "category": "Fruits",
+    "price": 2.49,
+    "stock": 45,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Cocos_nucifera_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-187.jpg/500px-Cocos_nucifera_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-187.jpg",
+    "description": "Fresh whole coconut."
+  },
+  {
+    "name": "Grapefruit",
+    "category": "Fruits",
+    "price": 1.29,
+    "stock": 70,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Grapefruits_-_whole-halved-segments.jpg/500px-Grapefruits_-_whole-halved-segments.jpg",
+    "description": "Tangy pink grapefruit."
+  },
+  {
+    "name": "Apricot",
+    "category": "Fruits",
+    "price": 2.49,
+    "stock": 50,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Apricot_and_cross_section.jpg/500px-Apricot_and_cross_section.jpg",
+    "description": "Sweet golden apricots."
+  },
+  {
+    "name": "Guava",
+    "category": "Fruits",
+    "price": 1.99,
+    "stock": 50,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Guava_pink_fruit.jpg/500px-Guava_pink_fruit.jpg",
+    "description": "Tropical pink-fleshed guava."
+  },
+  {
+    "name": "Lychee",
+    "category": "Fruits",
+    "price": 3.99,
+    "stock": 40,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Litchi_chinensis_fruits.JPG/500px-Litchi_chinensis_fruits.JPG",
+    "description": "Fragrant fresh lychees."
+  },
+  {
+    "name": "Jackfruit",
+    "category": "Fruits",
+    "price": 5.99,
+    "stock": 25,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/The_jackfruit_is_holding_on_to_the_tree.jpg/500px-The_jackfruit_is_holding_on_to_the_tree.jpg",
+    "description": "Large tropical jackfruit."
+  },
+  {
+    "name": "Beetroot",
+    "category": "Vegetables",
+    "price": 1.49,
+    "stock": 90,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Detroitdarkredbeets.png/500px-Detroitdarkredbeets.png",
+    "description": "Earthy fresh beetroot."
+  },
+  {
+    "name": "Aubergine",
+    "category": "Vegetables",
+    "price": 1.79,
+    "stock": 75,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Solanum_melongena_24_08_2012_%281%29.JPG/500px-Solanum_melongena_24_08_2012_%281%29.JPG",
+    "description": "Glossy purple aubergine."
+  },
+  {
+    "name": "Kale",
+    "category": "Vegetables",
+    "price": 2.49,
+    "stock": 80,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Boerenkool.jpg/500px-Boerenkool.jpg",
+    "description": "Curly green kale leaves."
+  },
+  {
+    "name": "Brussels Sprouts",
+    "category": "Vegetables",
+    "price": 2.29,
+    "stock": 65,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Brussels_sprout_closeup.jpg/500px-Brussels_sprout_closeup.jpg",
+    "description": "Fresh Brussels sprouts."
+  },
+  {
+    "name": "Leek",
+    "category": "Vegetables",
+    "price": 1.49,
+    "stock": 70,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Leek_on_white_background_-_0947.jpg/500px-Leek_on_white_background_-_0947.jpg",
+    "description": "Mild-flavoured fresh leeks."
+  },
+  {
+    "name": "Bok Choy",
+    "category": "Vegetables",
+    "price": 1.99,
+    "stock": 60,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Bok_Choy_%2849553125456%29.jpg/500px-Bok_Choy_%2849553125456%29.jpg",
+    "description": "Crisp baby bok choy."
+  },
+  {
+    "name": "Radish",
+    "category": "Vegetables",
+    "price": 0.99,
+    "stock": 100,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Radish_3371103037_4ab07db0bf_o.jpg/500px-Radish_3371103037_4ab07db0bf_o.jpg",
+    "description": "Crunchy red radishes."
+  },
+  {
+    "name": "Pumpkin",
+    "category": "Vegetables",
+    "price": 3.49,
+    "stock": 50,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/FrenchMarketPumpkinsB.jpg/500px-FrenchMarketPumpkinsB.jpg",
+    "description": "Whole orange pumpkin."
+  },
+  {
+    "name": "Turnip",
+    "category": "Vegetables",
+    "price": 1.29,
+    "stock": 80,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Turnip_2622027.jpg/500px-Turnip_2622027.jpg",
+    "description": "Fresh white turnips."
+  },
+  {
+    "name": "Gouda Cheese",
+    "category": "Dairy",
+    "price": 5.49,
+    "stock": 45,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Chesses_gouda_affinage.JPG/500px-Chesses_gouda_affinage.JPG",
+    "description": "Mild and creamy Gouda."
+  },
+  {
+    "name": "Brie",
+    "category": "Dairy",
+    "price": 6.49,
+    "stock": 30,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Brie_01.jpg/500px-Brie_01.jpg",
+    "description": "Soft-ripened French Brie."
+  },
+  {
+    "name": "Cream Cheese",
+    "category": "Dairy",
+    "price": 2.99,
+    "stock": 60,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Philly_cream_cheese.jpg/500px-Philly_cream_cheese.jpg",
+    "description": "Smooth spreadable cream cheese."
+  },
+  {
+    "name": "Sour Cream",
+    "category": "Dairy",
+    "price": 1.99,
+    "stock": 55,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Bowl_of_chili_with_sour_cream_and_cheese.jpg/500px-Bowl_of_chili_with_sour_cream_and_cheese.jpg",
+    "description": "Thick tangy sour cream."
+  },
+  {
+    "name": "Blue Cheese",
+    "category": "Dairy",
+    "price": 5.99,
+    "stock": 30,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Bleu_au_lait_de_ch%C3%A8vre.jpg/500px-Bleu_au_lait_de_ch%C3%A8vre.jpg",
+    "description": "Pungent creamy blue cheese."
+  },
+  {
+    "name": "Pork Sausages",
+    "category": "Meat",
+    "price": 4.99,
+    "stock": 55,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Wurstplatte.jpg/500px-Wurstplatte.jpg",
+    "description": "Traditional pork sausages, 6 pack."
+  },
+  {
+    "name": "Smoked Ham",
+    "category": "Meat",
+    "price": 6.99,
+    "stock": 40,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Ham_%284%29.jpg/500px-Ham_%284%29.jpg",
+    "description": "Thick-cut smoked honey ham."
+  },
+  {
+    "name": "Duck Breast",
+    "category": "Meat",
+    "price": 11.99,
+    "stock": 25,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/And_%2824559569447%29.jpg/500px-And_%2824559569447%29.jpg",
+    "description": "Premium duck breast fillet."
+  },
+  {
+    "name": "Cod Fillet",
+    "category": "Meat",
+    "price": 8.99,
+    "stock": 35,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Atlantic_Cod%2C_Atlantischer_Kabeljau_%28Gadus_morhua%29.jpg/500px-Atlantic_Cod%2C_Atlantischer_Kabeljau_%28Gadus_morhua%29.jpg",
+    "description": "Fresh sustainable cod fillet."
+  },
+  {
+    "name": "Mackerel",
+    "category": "Meat",
+    "price": 5.99,
+    "stock": 40,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Scomber_scombrus_217326414.jpg/500px-Scomber_scombrus_217326414.jpg",
+    "description": "Fresh whole Atlantic mackerel."
+  },
+  {
+    "name": "Scallops",
+    "category": "Meat",
+    "price": 14.99,
+    "stock": 20,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Argopecten_irradians.jpg/500px-Argopecten_irradians.jpg",
+    "description": "Hand-dived king scallops."
+  },
+  {
+    "name": "Venison Steak",
+    "category": "Meat",
+    "price": 13.99,
+    "stock": 20,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Venison_Steaks.jpg/500px-Venison_Steaks.jpg",
+    "description": "Lean wild venison steak."
+  },
+  {
+    "name": "Focaccia",
+    "category": "Bakery",
+    "price": 3.99,
+    "stock": 25,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Focaccia_with_Crumb.jpg/500px-Focaccia_with_Crumb.jpg",
+    "description": "Rosemary and sea salt focaccia."
+  },
+  {
+    "name": "Naan Bread",
+    "category": "Bakery",
+    "price": 1.99,
+    "stock": 40,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Annapurna_Naan.jpg/500px-Annapurna_Naan.jpg",
+    "description": "Soft tandoor-baked naan bread."
+  },
+  {
+    "name": "Rye Bread",
+    "category": "Bakery",
+    "price": 3.49,
+    "stock": 30,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Market_Bread%2C_Riga%2C_Latvia.jpg/500px-Market_Bread%2C_Riga%2C_Latvia.jpg",
+    "description": "Dense dark rye loaf."
+  },
+  {
+    "name": "Brioche",
+    "category": "Bakery",
+    "price": 3.99,
+    "stock": 25,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Brioche.jpg/500px-Brioche.jpg",
+    "description": "Buttery French brioche loaf."
+  },
+  {
+    "name": "Danish Pastry",
+    "category": "Bakery",
+    "price": 2.49,
+    "stock": 30,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Glazed_apple_Danish.jpg/500px-Glazed_apple_Danish.jpg",
+    "description": "Flaky cream cheese Danish."
+  },
+  {
+    "name": "Turmeric Powder",
+    "category": "Pantry",
+    "price": 2.99,
+    "stock": 100,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Turmeric_inflorescence.jpg/500px-Turmeric_inflorescence.jpg",
+    "description": "Ground turmeric spice, 100g."
+  },
+  {
+    "name": "Ground Cumin",
+    "category": "Pantry",
+    "price": 2.49,
+    "stock": 100,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Cuminum_cyminum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-198.jpg",
+    "description": "Aromatic ground cumin."
+  },
+  {
+    "name": "Smoked Paprika",
+    "category": "Pantry",
+    "price": 2.49,
+    "stock": 90,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/81/Piment%C3%B3n_Tap_de_Cort%C3%AD_%28cropped%29.jpg",
+    "description": "Rich smoked paprika spice."
+  },
+  {
+    "name": "Ground Cinnamon",
+    "category": "Pantry",
+    "price": 2.99,
+    "stock": 90,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Cinnamomum_verum_spices.jpg/500px-Cinnamomum_verum_spices.jpg",
+    "description": "Sweet Ceylon cinnamon powder."
+  },
+  {
+    "name": "Balsamic Vinegar",
+    "category": "Pantry",
+    "price": 4.99,
+    "stock": 60,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Balsamic_vinegar_%28drops%29.jpg/500px-Balsamic_vinegar_%28drops%29.jpg",
+    "description": "Aged Italian balsamic vinegar."
+  },
+  {
+    "name": "Tahini",
+    "category": "Pantry",
+    "price": 3.99,
+    "stock": 55,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Tahina.JPG/500px-Tahina.JPG",
+    "description": "Smooth sesame seed paste."
+  },
+  {
+    "name": "Fish Sauce",
+    "category": "Pantry",
+    "price": 2.49,
+    "stock": 65,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Sauce_de_poisson.jpg/500px-Sauce_de_poisson.jpg",
+    "description": "Authentic Thai fish sauce."
+  },
+  {
+    "name": "Sriracha Sauce",
+    "category": "Pantry",
+    "price": 3.49,
+    "stock": 70,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Siracha_sauce.jpg/500px-Siracha_sauce.jpg",
+    "description": "Hot chilli sriracha sauce."
+  },
+  {
+    "name": "Brown Rice",
+    "category": "Pantry",
+    "price": 3.99,
+    "stock": 90,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Reis_-_Sorte_C_voll.jpg/500px-Reis_-_Sorte_C_voll.jpg",
+    "description": "Wholegrain brown rice, 1kg."
+  },
+  {
+    "name": "Arborio Rice",
+    "category": "Pantry",
+    "price": 3.99,
+    "stock": 65,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/79/Reis_Arborio.JPG",
+    "description": "Creamy risotto arborio rice."
+  },
+  {
+    "name": "Baking Powder",
+    "category": "Pantry",
+    "price": 1.49,
+    "stock": 110,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/BakingPowder.jpg/500px-BakingPowder.jpg",
+    "description": "Raising agent baking powder."
+  },
+  {
+    "name": "Cornstarch",
+    "category": "Pantry",
+    "price": 1.29,
+    "stock": 100,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Cornstarch_mixed_with_water.jpg/500px-Cornstarch_mixed_with_water.jpg",
+    "description": "Fine cornstarch thickener."
+  },
+  {
+    "name": "Worcestershire Sauce",
+    "category": "Pantry",
+    "price": 2.49,
+    "stock": 70,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Worcester_Sauce_001.jpg/500px-Worcester_Sauce_001.jpg",
+    "description": "Classic Worcestershire sauce."
+  },
+  {
+    "name": "Oat Milk",
+    "category": "Beverages",
+    "price": 2.49,
+    "stock": 80,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Oat_milk_glass_and_bottles.jpg/500px-Oat_milk_glass_and_bottles.jpg",
+    "description": "Barista oat milk, 1L."
+  },
+  {
+    "name": "Matcha Powder",
+    "category": "Beverages",
+    "price": 9.99,
+    "stock": 40,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Matcha_Scoop.jpg/500px-Matcha_Scoop.jpg",
+    "description": "Ceremonial grade matcha, 50g."
+  },
+  {
+    "name": "Apple Juice",
+    "category": "Beverages",
+    "price": 2.49,
+    "stock": 90,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Apfelsaft_im_Glas.jpg/500px-Apfelsaft_im_Glas.jpg",
+    "description": "Pressed apple juice, 1L."
+  },
+  {
+    "name": "Peppermint Tea",
+    "category": "Beverages",
+    "price": 3.49,
+    "stock": 65,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Pfefferminze_natur_peppermint.jpg/500px-Pfefferminze_natur_peppermint.jpg",
+    "description": "Refreshing peppermint herbal tea."
+  },
+  {
+    "name": "Hot Chocolate",
+    "category": "Beverages",
+    "price": 4.99,
+    "stock": 55,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/After_The_St._Patrick%27s_Parade_Late_Lunch_%40_Lemon%2C_Dawson_Street%2C_Dublin%2C_Rep._Of_Ireland_A_Fine_Tradition%21_%286992614913%29.jpg/500px-After_The_St._Patrick%27s_Parade_Late_Lunch_%40_Lemon%2C_Dawson_Street%2C_Dublin%2C_Rep._Of_Ireland_A_Fine_Tradition%21_%286992614913%29.jpg",
+    "description": "Rich premium hot chocolate powder."
+  },
+  {
+    "name": "Lemonade",
+    "category": "Beverages",
+    "price": 1.99,
+    "stock": 80,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Lemonade_-_27682817724.jpg/500px-Lemonade_-_27682817724.jpg",
+    "description": "Sparkling cloudy lemonade, 1L."
+  },
+  {
+    "name": "Cashews",
+    "category": "Snacks",
+    "price": 4.99,
+    "stock": 70,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Cashew_apples.jpg/500px-Cashew_apples.jpg",
+    "description": "Roasted salted cashew nuts, 200g."
+  },
+  {
+    "name": "Almonds",
+    "category": "Snacks",
+    "price": 4.49,
+    "stock": 75,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Almonds_-_in_shell%2C_shell_cracked_open%2C_shelled%2C_blanched.jpg/500px-Almonds_-_in_shell%2C_shell_cracked_open%2C_shelled%2C_blanched.jpg",
+    "description": "Raw whole almonds, 200g."
+  },
+  {
+    "name": "Walnuts",
+    "category": "Snacks",
+    "price": 5.49,
+    "stock": 60,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Walnuts_-_whole_and_open_with_halved_kernel.jpg/500px-Walnuts_-_whole_and_open_with_halved_kernel.jpg",
+    "description": "Shelled walnut halves, 200g."
+  },
+  {
+    "name": "Sunflower Seeds",
+    "category": "Snacks",
+    "price": 2.49,
+    "stock": 90,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Sunflower_Seeds_Kaldari.jpg/500px-Sunflower_Seeds_Kaldari.jpg",
+    "description": "Roasted sunflower seeds, 150g."
+  },
+  {
+    "name": "Beef Jerky",
+    "category": "Snacks",
+    "price": 5.99,
+    "stock": 50,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Jerky_%281%29.jpg/500px-Jerky_%281%29.jpg",
+    "description": "Smoky beef jerky strips, 100g."
+  },
+  {
+    "name": "Dried Mango",
+    "category": "Snacks",
+    "price": 3.99,
+    "stock": 60,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/DriedfruitS.jpg/500px-DriedfruitS.jpg",
+    "description": "Sweet dried mango slices, 150g."
+  },
+  {
+    "name": "Peanuts",
+    "category": "Snacks",
+    "price": 2.49,
+    "stock": 100,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Arachis_hypogaea_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-163.jpg/500px-Arachis_hypogaea_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-163.jpg",
+    "description": "Dry roasted peanuts, 200g."
+  },
+  {
+    "name": "Frozen Waffles",
+    "category": "Frozen",
+    "price": 3.49,
+    "stock": 55,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Waffles_with_Strawberries.jpg/500px-Waffles_with_Strawberries.jpg",
+    "description": "Belgian-style frozen waffles, 6 pack."
+  },
+  {
+    "name": "Frozen Mixed Berries",
+    "category": "Frozen",
+    "price": 3.99,
+    "stock": 60,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Berberis_thunbergii_berries.jpg/500px-Berberis_thunbergii_berries.jpg",
+    "description": "Frozen mixed berry blend, 500g."
+  },
+  {
+    "name": "Frozen French Fries",
+    "category": "Frozen",
+    "price": 2.49,
+    "stock": 70,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/French_Fries.JPG/500px-French_Fries.JPG",
+    "description": "Crispy frozen French fries, 1kg."
+  },
+  {
+    "name": "Frozen Spinach",
+    "category": "Frozen",
+    "price": 1.99,
+    "stock": 80,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Spinacia_oleracea_Spinazie_bloeiend.jpg/500px-Spinacia_oleracea_Spinazie_bloeiend.jpg",
+    "description": "Chopped frozen spinach, 450g."
+  },
+  {
+    "name": "Frozen Shrimp",
+    "category": "Frozen",
+    "price": 7.99,
+    "stock": 45,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Palaemon_serratus_Croazia.jpg/500px-Palaemon_serratus_Croazia.jpg",
+    "description": "Peeled frozen shrimp, 400g."
   }
 ];
 
