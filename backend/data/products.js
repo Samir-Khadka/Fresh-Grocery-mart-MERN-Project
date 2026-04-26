@@ -313,7 +313,7 @@ const products = [
   },
   {
     "name": "Whole Milk",
-    "category": "Dairy & Eggs",
+    "category": "Dairy",
     "price": 2.49,
     "stock": 80,
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Glass_of_Milk_%2833657535532%29.jpg/500px-Glass_of_Milk_%2833657535532%29.jpg",
@@ -321,7 +321,7 @@ const products = [
   },
   {
     "name": "Cheddar Cheese",
-    "category": "Dairy & Eggs",
+    "category": "Dairy",
     "price": 4.99,
     "stock": 60,
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Somerset-Cheddar.jpg/500px-Somerset-Cheddar.jpg",
@@ -329,7 +329,7 @@ const products = [
   },
   {
     "name": "Mozzarella",
-    "category": "Dairy & Eggs",
+    "category": "Dairy",
     "price": 3.49,
     "stock": 55,
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Mozzarella_di_bufala3.jpg/500px-Mozzarella_di_bufala3.jpg",
@@ -337,7 +337,7 @@ const products = [
   },
   {
     "name": "Unsalted Butter",
-    "category": "Dairy & Eggs",
+    "category": "Dairy",
     "price": 3.99,
     "stock": 70,
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/%C5%A0v%C3%A9dsk%C3%BD_kol%C3%A1%C4%8D_naruby_904_%28cropped%29.JPG/500px-%C5%A0v%C3%A9dsk%C3%BD_kol%C3%A1%C4%8D_naruby_904_%28cropped%29.JPG",
@@ -345,7 +345,7 @@ const products = [
   },
   {
     "name": "Heavy Cream",
-    "category": "Dairy & Eggs",
+    "category": "Dairy",
     "price": 2.49,
     "stock": 50,
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/01_Mmm..._Apple_Crisp_with_Whipped_Cream.jpg/500px-01_Mmm..._Apple_Crisp_with_Whipped_Cream.jpg",
@@ -353,7 +353,7 @@ const products = [
   },
   {
     "name": "Cottage Cheese",
-    "category": "Dairy & Eggs",
+    "category": "Dairy",
     "price": 2.79,
     "stock": 45,
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Cottagecheese200px.jpg/500px-Cottagecheese200px.jpg",
@@ -361,7 +361,7 @@ const products = [
   },
   {
     "name": "Feta Cheese",
-    "category": "Dairy & Eggs",
+    "category": "Dairy",
     "price": 4.49,
     "stock": 40,
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Feta_Cheese.jpg/500px-Feta_Cheese.jpg",
@@ -369,7 +369,7 @@ const products = [
   },
   {
     "name": "Chicken Breast",
-    "category": "Meat & Seafood",
+    "category": "Meat",
     "price": 7.99,
     "stock": 60,
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chickens_in_market.jpg/500px-Chickens_in_market.jpg",
@@ -377,7 +377,7 @@ const products = [
   },
   {
     "name": "Beef Ribeye Steak",
-    "category": "Meat & Seafood",
+    "category": "Meat",
     "price": 14.99,
     "stock": 30,
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/BeefCutRib.svg/500px-BeefCutRib.svg.png",
@@ -385,7 +385,7 @@ const products = [
   },
   {
     "name": "Pork Belly",
-    "category": "Meat & Seafood",
+    "category": "Meat",
     "price": 8.99,
     "stock": 35,
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Schweinebauch-2.jpg/500px-Schweinebauch-2.jpg",
@@ -393,7 +393,7 @@ const products = [
   },
   {
     "name": "Atlantic Salmon",
-    "category": "Meat & Seafood",
+    "category": "Meat",
     "price": 11.99,
     "stock": 40,
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Wst_atlantischer_lachs_stoer_001.jpg/500px-Wst_atlantischer_lachs_stoer_001.jpg",
@@ -401,7 +401,7 @@ const products = [
   },
   {
     "name": "Yellowfin Tuna",
-    "category": "Meat & Seafood",
+    "category": "Meat",
     "price": 9.99,
     "stock": 35,
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Thunnus_albacares.png",
@@ -409,7 +409,7 @@ const products = [
   },
   {
     "name": "Tiger Prawns",
-    "category": "Meat & Seafood",
+    "category": "Meat",
     "price": 13.99,
     "stock": 30,
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/CSIRO_ScienceImage_2992_The_Giant_Tiger_Prawn.jpg/500px-CSIRO_ScienceImage_2992_The_Giant_Tiger_Prawn.jpg",
@@ -417,7 +417,7 @@ const products = [
   },
   {
     "name": "Dungeness Crab",
-    "category": "Meat & Seafood",
+    "category": "Meat",
     "price": 18.99,
     "stock": 15,
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/DungenessCrab.jpg/500px-DungenessCrab.jpg",
@@ -425,7 +425,7 @@ const products = [
   },
   {
     "name": "Streaky Bacon",
-    "category": "Meat & Seafood",
+    "category": "Meat",
     "price": 5.99,
     "stock": 60,
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Made20bacon.png/500px-Made20bacon.png",
@@ -433,7 +433,7 @@ const products = [
   },
   {
     "name": "Beef Mince",
-    "category": "Meat & Seafood",
+    "category": "Meat",
     "price": 6.99,
     "stock": 50,
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Hackfleisch-1.jpg/500px-Hackfleisch-1.jpg",
