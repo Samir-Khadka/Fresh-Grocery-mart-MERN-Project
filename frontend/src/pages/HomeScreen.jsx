@@ -8,10 +8,13 @@ import useSearchStore from '../store/useSearchStore';
 import useWishlistStore from '../store/useWishlistStore';
 import useLocationStore from '../store/useLocationStore';
 
+// Module-level cache — persists across navigations within the same session
+let _productsCache = null;
+
 const HomeScreen = () => {
-    const [products, setProducts] = useState([]);
-    const [filteredProducts, setFilteredProducts] = useState([]);
-    const [loading, setLoading] = useState(true);
+    const [products, setProducts] = useState(_productsCache || []);
+    const [filteredProducts, setFilteredProducts] = useState(_productsCache || []);
+    const [loading, setLoading] = useState(!_productsCache);
     const [activeCategory, setActiveCategory] = useState('All');
     const { addItem } = useCartStore();
     const { query } = useSearchStore();
@@ -30,9 +33,13 @@ const HomeScreen = () => {
     ];
 
     useEffect(() => {
+        // If already cached, skip the API call entirely — instant load
+        if (_productsCache) return;
+
         const fetchProducts = async () => {
             try {
                 const { data } = await axios.get('/api/products');
+                _productsCache = data; // store in module cache
                 setProducts(data);
                 setFilteredProducts(data);
                 setLoading(false);
@@ -160,6 +167,8 @@ const HomeScreen = () => {
                                             src={product.image} 
                                             alt={product.name}
                                             referrerPolicy="no-referrer"
+                                            loading="lazy"
+                                            decoding="async"
                                             onError={(e) => {
                                                 e.target.onerror = null;
                                                 e.target.src = `https://placehold.co/500x400/e8f5e9/2e7d32?text=${encodeURIComponent(product.name)}`;

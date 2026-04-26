@@ -12,7 +12,13 @@ const getProducts = asyncHandler(async (req, res) => {
         }
     } : {};
 
-    const products = await Product.find({ ...keyword }).sort({ createdAt: -1 });
+    const products = await Product.find({ ...keyword })
+        .select('name price image category stock rating numReviews description')
+        .lean()  // returns plain JS objects instead of Mongoose docs — much faster
+        .sort({ createdAt: -1 });
+
+    // Cache for 60 seconds in browser, 120s in shared cache (CDN/proxy)
+    res.set('Cache-Control', 'public, max-age=60, s-maxage=120');
     res.json(products);
 });
 

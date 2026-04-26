@@ -5,6 +5,7 @@ const helmet = require('helmet');
 const morgan = require('morgan');
 const mongoSanitize = require('express-mongo-sanitize');
 const rateLimit = require('express-rate-limit');
+const compression = require('compression');
 const dotenv = require('dotenv');
 const { notFound, errorHandler } = require('./middleware/errorMiddleware');
 const connectDB = require('./config/db');
@@ -24,6 +25,7 @@ connectDB();
 const app = express();
 
 // Security & Optimization Middleware
+app.use(compression()); // gzip all responses
 app.use(express.json());
 app.use(cors());
 app.use(helmet());
@@ -42,10 +44,10 @@ if (process.env.NODE_ENV === 'development') {
     app.use(morgan('dev')); // API logging
 }
 
-// Rate Limiting
+// Rate Limiting — generous limit so normal browsing is never throttled
 const limiter = rateLimit({
     windowMs: 15 * 60 * 1000, // 15 minutes
-    max: 100 // limit each IP to 100 requests per windowMs
+    max: 1000 // allow 1000 requests per 15 min per IP
 });
 app.use('/api/', limiter);
 
