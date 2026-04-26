@@ -1,0 +1,10 @@
+{
+  "name": "mern-grocery",
+  "version": "1.0.0",
+  "description": "Premium MERN Grocery Store",
+  "scripts": {
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm run dev",
+    "seed": "cd backend && node seeder.js"
+  }
+}
