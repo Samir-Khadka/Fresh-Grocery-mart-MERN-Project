@@ -22,7 +22,10 @@ const AdminUsersList = () => {
     }, [authUser.token]);
 
     useEffect(() => {
-        if (authUser && authUser.role === 'admin') fetchUsers();
+        if (authUser && authUser.role === 'admin') {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
+            fetchUsers();
+        }
     }, [authUser, fetchUsers]);
 
     const handleRoleChange = async (userId, newRole) => {

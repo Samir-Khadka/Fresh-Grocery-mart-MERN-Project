@@ -28,6 +28,7 @@ const DriverDashboard = () => {
             navigate('/');
             return;
         }
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         fetchDeliveries();
     }, [user, navigate, fetchDeliveries]);
 
@@ -37,7 +38,7 @@ const DriverDashboard = () => {
             await axios.put(`/api/orders/${orderId}/status`, { status }, config);
             toast.success(`Order marked as ${status}`);
             fetchDeliveries();
-        } catch (err) {
+        } catch {
             toast.error('Error updating delivery status');
         }
     };

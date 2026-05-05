@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Package, ShoppingBag, Users, TrendingUp, BarChart as BarChartIcon, LayoutDashboard, History } from 'lucide-react';
+import { Package, ShoppingBag, Users, TrendingUp, LayoutDashboard, History } from 'lucide-react';
 import { 
     ResponsiveContainer, 
     BarChart, 

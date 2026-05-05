@@ -19,7 +19,7 @@ const ProductScreen = () => {
                 const { data } = await axios.get(`/api/products/${id}`);
                 setProduct(data);
                 setLoading(false);
-            } catch (err) {
+            } catch {
                 toast.error('Product not found');
                 navigate('/');
             }
