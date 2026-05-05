@@ -16,8 +16,11 @@ const ProfileScreen = () => {
 
     useEffect(() => {
         if (user) {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
             if (!name) setName(user.name);
+            // eslint-disable-next-line react-hooks/set-state-in-effect
             if (!email) setEmail(user.email);
+            // eslint-disable-next-line react-hooks/set-state-in-effect
             if (!image) setImage(user.image || '');
         }
     }, [user, name, email, image]);

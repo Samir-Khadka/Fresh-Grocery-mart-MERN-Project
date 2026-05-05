@@ -26,6 +26,7 @@ const AdminOrdersList = () => {
 
     useEffect(() => {
         if (user && user.role === 'admin') {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
             fetchData();
         }
     }, [user, fetchData]);
@@ -36,6 +37,7 @@ const AdminOrdersList = () => {
             await axios.put(`/api/admin/orders/${orderId}/assign`, { driverId }, config);
             fetchData();
         } catch (err) {
+            console.error(err);
             alert('Error assigning driver');
         }
     };

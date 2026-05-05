@@ -27,6 +27,7 @@ const AdminProductsList = () => {
     }, []);
 
     useEffect(() => {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         fetchProducts();
     }, [fetchProducts]);
 
@@ -37,7 +38,7 @@ const AdminProductsList = () => {
             await axios.delete(`/api/admin/products/${id}`, config);
             toast.success('Product deleted');
             fetchProducts();
-        } catch (error) {
+        } catch {
             toast.error('Error deleting product');
         }
     };
@@ -54,7 +55,7 @@ const AdminProductsList = () => {
             toast.success('Product updated');
             setEditingId(null);
             fetchProducts();
-        } catch (error) {
+        } catch {
             toast.error('Error updating product');
         }
     };

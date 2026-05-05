@@ -42,7 +42,7 @@ const AdminUsersList = () => {
             await axios.put(`/api/admin/users/${userId}/role`, { isVerified }, config);
             toast.success(isVerified ? 'Driver verified!' : 'Verification removed');
             fetchUsers();
-        } catch (err) {
+        } catch {
             toast.error('Error verifying driver');
         }
     };
