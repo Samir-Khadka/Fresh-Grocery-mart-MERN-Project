@@ -1,7 +1,7 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { ShoppingCart, User, Search, MapPin, ChevronDown, Settings, LogOut, Package, ShieldCheck, Truck, X, Heart } from 'lucide-react';
+import { ShoppingCart, User, Search, MapPin, ChevronDown, LogOut, Package, ShieldCheck, Truck, X, Heart } from 'lucide-react';
 import useAuthStore from '../store/useAuthStore';
 import useCartStore from '../store/useCartStore';
 import useLocationStore from '../store/useLocationStore';

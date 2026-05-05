@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Package, ShoppingBag, Users, TrendingUp, BarChart as BarChartIcon, LayoutDashboard, History } from 'lucide-react';
 import { 
@@ -9,9 +9,6 @@ import {
     YAxis, 
     CartesianGrid, 
     Tooltip, 
-    Legend, 
-    LineChart, 
-    Line,
     AreaChart,
     Area
 } from 'recharts';

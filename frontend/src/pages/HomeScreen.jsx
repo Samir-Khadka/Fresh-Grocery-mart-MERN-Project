@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { ShoppingCart, Star, Filter, Heart, Truck, ShieldCheck, Zap, ArrowRight, Mail, MapPin } from 'lucide-react';
@@ -13,7 +13,6 @@ let _productsCache = null;
 
 const HomeScreen = () => {
     const [products, setProducts] = useState(_productsCache || []);
-    const [filteredProducts, setFilteredProducts] = useState(_productsCache || []);
     const [loading, setLoading] = useState(!_productsCache);
     const [activeCategory, setActiveCategory] = useState('All');
     const { addItem } = useCartStore();
@@ -41,7 +40,6 @@ const HomeScreen = () => {
                 const { data } = await axios.get('/api/products');
                 _productsCache = data; // store in module cache
                 setProducts(data);
-                setFilteredProducts(data);
                 setLoading(false);
             } catch (error) {
                 console.error(error);
@@ -51,19 +49,13 @@ const HomeScreen = () => {
         fetchProducts();
     }, []);
 
-    useEffect(() => {
-        let result = products;
-        if (activeCategory !== 'All') {
-            result = result.filter(p => p.category === activeCategory);
-        }
-        if (query) {
-            result = result.filter(p => 
-                p.name.toLowerCase().includes(query.toLowerCase()) ||
-                p.description.toLowerCase().includes(query.toLowerCase())
-            );
-        }
-        setFilteredProducts(result);
-    }, [activeCategory, products, query]);
+    const filteredProducts = products.filter(p => {
+        const matchesCategory = activeCategory === 'All' || p.category === activeCategory;
+        const matchesQuery = !query || 
+            p.name.toLowerCase().includes(query.toLowerCase()) ||
+            p.description.toLowerCase().includes(query.toLowerCase());
+        return matchesCategory && matchesQuery;
+    });
 
     if (loading) return (
         <div className="loading-state-full">

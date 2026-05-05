@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 import { Plus, Trash2, Edit3, Save, X, Image as ImageIcon, Tag, Hash, DollarSign, FileText } from 'lucide-react';
@@ -15,7 +15,7 @@ const AdminProductsList = () => {
     });
     const { user } = useAuthStore();
 
-    const fetchProducts = async () => {
+    const fetchProducts = useCallback(async () => {
         try {
             const { data } = await axios.get('/api/products');
             setProducts(data);
@@ -24,11 +24,11 @@ const AdminProductsList = () => {
             console.error(error);
             setLoading(false);
         }
-    };
+    }, []);
 
     useEffect(() => {
         fetchProducts();
-    }, []);
+    }, [fetchProducts]);
 
     const handleDelete = async (id) => {
         if (!window.confirm('Delete this product permanently?')) return;

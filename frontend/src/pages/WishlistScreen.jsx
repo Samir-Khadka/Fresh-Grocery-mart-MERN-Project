@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { Heart, ShoppingCart, Trash2, ArrowLeft, Star } from 'lucide-react';
 import toast from 'react-hot-toast';

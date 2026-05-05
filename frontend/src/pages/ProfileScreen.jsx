@@ -1,27 +1,26 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 import { User, Mail, Lock, Shield, Save, Package, Camera, Upload } from 'lucide-react';
 import useAuthStore from '../store/useAuthStore';
 
 const ProfileScreen = () => {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [image, setImage] = useState('');
+    const { user, updateUserInfo } = useAuthStore();
+    const [name, setName] = useState(user?.name || '');
+    const [email, setEmail] = useState(user?.email || '');
+    const [image, setImage] = useState(user?.image || '');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [uploading, setUploading] = useState(false);
     const [loading, setLoading] = useState(false);
 
-    const { user, updateUserInfo } = useAuthStore();
-
     useEffect(() => {
         if (user) {
-            setName(user.name);
-            setEmail(user.email);
-            setImage(user.image || '');
+            if (!name) setName(user.name);
+            if (!email) setEmail(user.email);
+            if (!image) setImage(user.image || '');
         }
-    }, [user]);
+    }, [user, name, email, image]);
 
     const uploadFileHandler = async (e) => {
         const file = e.target.files[0];

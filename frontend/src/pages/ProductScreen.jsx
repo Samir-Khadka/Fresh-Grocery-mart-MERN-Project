@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { ShoppingCart, ArrowLeft, Star, ShieldCheck, Truck, RotateCcw } from 'lucide-react';
 import toast from 'react-hot-toast';
@@ -19,7 +19,7 @@ const ProductScreen = () => {
                 const { data } = await axios.get(`/api/products/${id}`);
                 setProduct(data);
                 setLoading(false);
-            } catch (error) {
+            } catch (err) {
                 toast.error('Product not found');
                 navigate('/');
             }

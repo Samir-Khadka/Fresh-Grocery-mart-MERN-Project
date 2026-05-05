@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 import useAuthStore from '../../store/useAuthStore';
@@ -9,7 +9,7 @@ const AdminUsersList = () => {
     const [filter, setFilter] = useState('all'); // 'all', 'admin', 'driver', 'user'
     const { user: authUser } = useAuthStore();
 
-    const fetchUsers = async () => {
+    const fetchUsers = useCallback(async () => {
         try {
             const config = { headers: { Authorization: `Bearer ${authUser.token}` } };
             const { data } = await axios.get('/api/admin/users', config);
@@ -19,11 +19,11 @@ const AdminUsersList = () => {
             console.error(error);
             setLoading(false);
         }
-    };
+    }, [authUser.token]);
 
     useEffect(() => {
         if (authUser && authUser.role === 'admin') fetchUsers();
-    }, [authUser]);
+    }, [authUser, fetchUsers]);
 
     const handleRoleChange = async (userId, newRole) => {
         try {
@@ -31,8 +31,8 @@ const AdminUsersList = () => {
             await axios.put(`/api/admin/users/${userId}/role`, { role: newRole }, config);
             toast.success(`Role updated to ${newRole}`);
             fetchUsers();
-        } catch (error) {
-            toast.error(error.response?.data?.message || 'Error updating role');
+        } catch (err) {
+            toast.error(err.response?.data?.message || 'Error updating role');
         }
     };
 
@@ -42,7 +42,7 @@ const AdminUsersList = () => {
             await axios.put(`/api/admin/users/${userId}/role`, { isVerified }, config);
             toast.success(isVerified ? 'Driver verified!' : 'Verification removed');
             fetchUsers();
-        } catch (error) {
+        } catch (err) {
             toast.error('Error verifying driver');
         }
     };
@@ -54,8 +54,8 @@ const AdminUsersList = () => {
             await axios.delete(`/api/admin/users/${userId}`, config);
             toast.success('User deleted');
             fetchUsers();
-        } catch (error) {
-            toast.error(error.response?.data?.message || 'Error deleting user');
+        } catch (err) {
+            toast.error(err.response?.data?.message || 'Error deleting user');
         }
     };
 

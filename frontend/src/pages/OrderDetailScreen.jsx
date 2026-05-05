@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
-import { Package, Truck, CheckCircle, Clock, MapPin, CreditCard, ArrowLeft } from 'lucide-react';
+import { Package, Truck, CheckCircle, MapPin, CreditCard, ArrowLeft } from 'lucide-react';
 import useAuthStore from '../store/useAuthStore';
 
 const OrderDetailScreen = () => {
